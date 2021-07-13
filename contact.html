@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/25a192799c.js" crossorigin="anonymous"></script>
+    <title>University Website Design</title>
+</head>
+
+<body>
+    <Section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logo.jpg" alt="logo"></a>
+            <div class="nav-links" id="nav">
+                <i class="fa fa-times" onclick="closeMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="Blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Contact Us</h1>
+    </Section>
+    <!-- --------------contact-us-content----------- -->
+    <section class="location">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d56037.36938547112!2d77.31680443999764!3d28.61970264541657!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e0!4m0!4m5!1s0x390ce53ee2158279%3A0x3826ffefb2fb48f8!2sSaraswathi%20Vihar%2C%20Khora%20Colony%2C%20Sector%2062A%2C%20Noida%2C%20Uttar%20Pradesh%20201309%2C%20India!3m2!1d28.619631799999997!2d77.3518241!5e0!3m2!1sen!2sin!4v1624969480845!5m2!1sen!2sin"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+    </section>
+    <section class="contact-us">
+        <div class="row">
+            <div class="contact-col">
+                <div>
+                    <i class="fa fa-home"></i>
+                    <span>
+                        <h5>XYZ Road, ABC Building </h5>
+                        <p>Noida sec-62, Uttarpradesh, IN</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-phone"></i>
+                    <span>
+                        <h5>+1 1234567890</h5>
+                        <p>Monday to Saturday, 10AM to 6PM</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-envelope-o"></i>
+                    <span>
+                        <h5>XYZUniversity105.com</h5>
+                        <p>Email Us Our Query</p>
+                    </span>
+                </div>
+            </div>
+            <div class="contact-col">
+                <form action="form-handler.php" method="POST">
+                    <input type="text" name="name" placeholder="Enter the Your Name" required>
+                    <input type="email" name="email" placeholder="Enter the Email Address" required>
+                    <input type="subject" name="subject" placeholder="Enter the Your subject" required>
+                    <textarea  rows="8" name="message" placeholder="Message"></textarea>
+                    <button type="submit" class="btn-hero red-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ------------------footer------------------ -->
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum quod nihil dolorum vel omnis dicta
+            dignissimos<br>
+            ea animi tempora fugit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, nostrum? .</p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+        <p>Made with <i class="fa fa-heart-o"></i> By NeerajRawat</p>
+    </section>
+    <!-- -------------javaScript for Toggle Menu----------- -->
+    <script>
+        let nav;
+        nav = document.getElementById("nav");
+        function showMenu() {
+            nav.style.right = "0";
+        }
+        function closeMenu() {
+            nav.style.right = "-200px";
+        }
+
+    </script>
+</body>
+
+</html>
